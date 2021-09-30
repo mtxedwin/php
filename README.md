@@ -19,7 +19,7 @@ allowing each one to develop with their preferred language.
 const<br />
 &nbsp;&nbsp;path = require('path'),<br />
 &nbsp;&nbsp;express = require('express'),<br />
-&nbsp;&nbsp;PHP = require('php');<br />
+&nbsp;&nbsp;PHP = require('@edwinagudelo/php');<br />
 #########################################################<br />
 2. Instantiate:<br />
 ### ------------------------------------------------- ###<br />
