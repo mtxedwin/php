@@ -15,7 +15,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "\"No tests\""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
