@@ -34,7 +34,7 @@ php.views = path.join(__dirname, 'views');<br />
 4. Define our routes:<br />
 ### ------------------------------------------------- ###<br />
 app.get('/', (req, res) => {<br />
-&nbsp;&nbsp;php.render(`index`, function (ans) {<br />
+&nbsp;&nbsp;php.render('index', function (ans) {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
 &nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
 &nbsp;&nbsp;});<br />
@@ -46,7 +46,7 @@ app.get('/test', (req, res) => {<br />
 &nbsp;&nbsp;testRender(req, res);<br />
 });<br />
 function testRender(req, res){<br />
-&nbsp;&nbsp;php.render(req.url==='/test'?`test`:`error`, function (ans) {<br />
+&nbsp;&nbsp;php.render(req.url==='/test'?'test':'error', function (ans) {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;try {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
@@ -91,7 +91,7 @@ Puede ser de utilidad para equipos de desarrollo en los cuales hay programadores
 const<br />
 &nbsp;&nbsp;path = require('path'),<br />
 &nbsp;&nbsp;express = require('express'),<br />
-&nbsp;&nbsp;PHP = require('php');<br />
+&nbsp;&nbsp;PHP = require('@edwinagudelo/php');<br />
 #########################################################<br />
 2. Instanciamos:<br />
 ### ------------------------------------------------- ###<br />
@@ -106,7 +106,7 @@ php.views = path.join(__dirname, 'views');<br />
 4. Definimos nuestras rutas:<br />
 ### ------------------------------------------------- ###<br />
 app.get('/', (req, res) => {<br />
-&nbsp;&nbsp;php.render(`index`, function (ans) {<br />
+&nbsp;&nbsp;php.render('index', function (ans) {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
 &nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
 &nbsp;&nbsp;});<br />
@@ -118,7 +118,7 @@ app.get('/test', (req, res) => {<br />
 &nbsp;&nbsp;testRender(req, res);<br />
 });<br />
 function testRender(req, res){<br />
-&nbsp;&nbsp;php.render(req.url==='/test'?`test`:`error`, function (ans) {<br />
+&nbsp;&nbsp;php.render(req.url==='/test'?'test':'error', function (ans) {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;try {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
