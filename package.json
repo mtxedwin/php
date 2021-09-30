@@ -11,7 +11,7 @@
     "example/*", "example/views/*", "lib/*", "index.js", "README.md"
   ],
   "scripts": {
-    "test": "No test specified"
+    "test": "\"No test specified\""
   },
   "repository": {
     "type": "git",
