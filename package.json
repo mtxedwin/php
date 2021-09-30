@@ -1,0 +1,33 @@
+{
+  "name": "@edwinagudelo/php",
+  "version": "1.0.0",
+  "description": "PHP render for Express.js",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "files": [
+    "example/*", "example/views/*", "lib/*", "index.js", "README.md"
+  ],
+  "scripts": {
+    "test": "No test specified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtxedwin/php.git"
+  },
+  "keywords": [
+    "express",
+    "expressjs",
+    "php",
+    "template",
+    "render"
+  ],
+  "author": "Edwin Agudelo Jaramillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtxedwin/php/issues"
+  },
+  "homepage": "https://github.com/mtxedwin/php#readme"
+}
