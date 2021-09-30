@@ -18,14 +18,14 @@ allowing each one to develop with their preferred language.
 ### ------------------------------------------------- ###<br />
 const<br />
 &nbsp;&nbsp;path = require('path'),<br />
-  express = require('express'),<br />
-  PHP = require('php');<br />
+&nbsp;&nbsp;express = require('express'),<br />
+&nbsp;&nbsp;PHP = require('php');<br />
 #########################################################<br />
 2. Instantiate:<br />
 ### ------------------------------------------------- ###<br />
 const<br />
-  app = express(),<br />
-  php = new PHP();<br />
+&nbsp;&nbsp;app = express(),<br />
+&nbsp;&nbsp;php = new PHP();<br />
 #########################################################<br />
 3. Indicate the folder of our views:<br />
 ### ------------------------------------------------- ###<br />
@@ -34,42 +34,42 @@ php.views = path.join(__dirname, 'views');<br />
 4. Define our routes:<br />
 ### ------------------------------------------------- ###<br />
 app.get('/', (req, res) => {<br />
-  php.render(`index`, function (ans) {<br />
-    res.write(ans);<br />
-    res.end();<br />
-  });<br />
+&nbsp;&nbsp;php.render(`index`, function (ans) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
+&nbsp;&nbsp;});<br />
 });<br />
 app.all('/*', (req, res) => {<br />
-  testRender(req, res);<br />
+&nbsp;&nbsp;testRender(req, res);<br />
 });<br />
 app.get('/test', (req, res) => {<br />
-  testRender(req, res);<br />
+&nbsp;&nbsp;testRender(req, res);<br />
 });<br />
 function testRender(req, res){<br />
-  php.render(req.url==='/test'?`test`:`error`, function (ans) {<br />
-    try {<br />
-      res.write(ans);<br />
-      res.end();<br />
-    } catch (err) {<br />
-      if (err.code === 'ERR_INVALID_ARG_TYPE') {<br />
-        let<br />
-          errorText = [<br />
-            'File not found.',<br />
-            'Verify the file route.'<br />
-          ],<br />
-          error = `<h1>${errorText[0]}<br>${errorText[1]}<h1>`;<br />
-        console.log(`${errorText[0]}\n${errorText[1]}`);<br />
-        res.write(error);<br />
-        res.end();<br />
-      };<br />
-    };<br />
-  });<br />
+&nbsp;&nbsp;php.render(req.url==='/test'?`test`:`error`, function (ans) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;try {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;} catch (err) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (err.code === 'ERR_INVALID_ARG_TYPE') {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;errorText = [<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'File not found.',<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Verify the file route.'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error = `<h1>${errorText[0]}<br>${errorText[1]}<h1>`;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(`${errorText[0]}\n${errorText[1]}`);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.write(error);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br />
+&nbsp;&nbsp;&nbsp;&nbsp;};<br />
+&nbsp;&nbsp;});<br />
 };<br />
 #########################################################<br />
 5. Start the server:<br />
 ### ------------------------------------------------- ###<br />
 app.listen(9811, () =><br />
-  console.log('\x1b[1;4;3;36mCreated by Edwin Agudelo -> 3dw1n.4gud3l0@gmail.com\x1b[0m\nServer active on port', 9811)<br />
+&nbsp;&nbsp;console.log('\x1b[1;4;3;36mCreated by Edwin Agudelo -> 3dw1n.4gud3l0@gmail.com\x1b[0m\nServer active on port', 9811)<br />
 );<br />
 #########################################################<br />
 #########################################################<br />
@@ -89,15 +89,15 @@ Puede ser de utilidad para equipos de desarrollo en los cuales hay programadores
 1. Llamamos las dependencias:<br />
 ### ------------------------------------------------- ###<br />
 const<br />
-  path = require('path'),<br />
-  express = require('express'),<br />
-  PHP = require('php');<br />
+&nbsp;&nbsp;path = require('path'),<br />
+&nbsp;&nbsp;express = require('express'),<br />
+&nbsp;&nbsp;PHP = require('php');<br />
 #########################################################<br />
 2. Instanciamos:<br />
 ### ------------------------------------------------- ###<br />
 const<br />
-  app = express(),<br />
-  php = new PHP();<br />
+&nbsp;&nbsp;app = express(),<br />
+&nbsp;&nbsp;php = new PHP();<br />
 #########################################################<br />
 3. Indicamos la carpeta de nuestras vistas:<br />
 ### ------------------------------------------------- ###<br />
@@ -106,40 +106,40 @@ php.views = path.join(__dirname, 'views');<br />
 4. Definimos nuestras rutas:<br />
 ### ------------------------------------------------- ###<br />
 app.get('/', (req, res) => {<br />
-  php.render(`index`, function (ans) {<br />
-    res.write(ans);<br />
-    res.end();<br />
-  });<br />
+&nbsp;&nbsp;php.render(`index`, function (ans) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
+&nbsp;&nbsp;});<br />
 });<br />
 app.all('/*', (req, res) => {<br />
-  testRender(req, res);<br />
+&nbsp;&nbsp;testRender(req, res);<br />
 });<br />
 app.get('/test', (req, res) => {<br />
-  testRender(req, res);<br />
+&nbsp;&nbsp;testRender(req, res);<br />
 });<br />
 function testRender(req, res){<br />
-  php.render(req.url==='/test'?`test`:`error`, function (ans) {<br />
-    try {<br />
-      res.write(ans);<br />
-      res.end();<br />
-    } catch (err) {<br />
-      if (err.code === 'ERR_INVALID_ARG_TYPE') {<br />
-        let<br />
-          errorText = [<br />
-            'Archivo no Encontrado.',<br />
-            'Verifique la ruta de los archivos.'<br />
-          ],<br />
-          error = `<h1>${errorText[0]}<br>${errorText[1]}<h1>`;<br />
-        console.log(`${errorText[0]}\n${errorText[1]}`);<br />
-        res.write(error);<br />
-        res.end();<br />
-      };<br />
-    };<br />
-  });<br />
+&nbsp;&nbsp;php.render(req.url==='/test'?`test`:`error`, function (ans) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;try {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;} catch (err) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (err.code === 'ERR_INVALID_ARG_TYPE') {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;errorText = [<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Archivo no Encontrado.',<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Verifique la ruta de los archivos.'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error = `<h1>${errorText[0]}<br>${errorText[1]}<h1>`;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(`${errorText[0]}\n${errorText[1]}`);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.write(error);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.end();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br />
+&nbsp;&nbsp;&nbsp;&nbsp;};<br />
+&nbsp;&nbsp;});<br />
 };<br />
 #########################################################<br />
 5. Iniciamos el servidor:<br />
 ### ------------------------------------------------- ###<br />
 app.listen(9811, () =><br />
-  console.log('\x1b[1;4;3;36mCreado por Edwin Agudelo -> 3dw1n.4gud3l0@gmail.com\x1b[0m\nServidor activo en el puerto', 9811)<br />
+&nbsp;&nbsp;console.log('\x1b[1;4;3;36mCreado por Edwin Agudelo -> 3dw1n.4gud3l0@gmail.com\x1b[0m\nServidor activo en el puerto', 9811)<br />
 );<br />
