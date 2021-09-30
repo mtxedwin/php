@@ -15,24 +15,24 @@ allowing each one to develop with their preferred language.
 # Usage:<br />
 #########################################################<br />
 1. Call the dependencies:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 const<br />
 &nbsp;&nbsp;path = require('path'),<br />
 &nbsp;&nbsp;express = require('express'),<br />
 &nbsp;&nbsp;PHP = require('@edwinagudelo/php');<br />
 #########################################################<br />
 2. Instantiate:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 const<br />
 &nbsp;&nbsp;app = express(),<br />
 &nbsp;&nbsp;php = new PHP();<br />
 #########################################################<br />
 3. Indicate the folder of our views:<br />
-### ------------------------------------------------- ###<br />
+}### ------------------------------------------------- ###<br />
 php.views = path.join(__dirname, 'views');<br />
 #########################################################<br />
 4. Define our routes:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 app.get('/', (req, res) => {<br />
 &nbsp;&nbsp;php.render('index', function (ans) {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
@@ -67,7 +67,7 @@ function testRender(req, res){<br />
 };<br />
 #########################################################<br />
 5. Start the server:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 app.listen(9811, () =><br />
 &nbsp;&nbsp;console.log('\x1b[1;4;3;36mCreated by Edwin Agudelo -> 3dw1n.4gud3l0@gmail.com\x1b[0m\nServer active on port', 9811)<br />
 );<br />
@@ -87,24 +87,24 @@ Puede ser de utilidad para equipos de desarrollo en los cuales hay programadores
 # Modo de uso:<br />
 #########################################################<br />
 1. Llamamos las dependencias:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 const<br />
 &nbsp;&nbsp;path = require('path'),<br />
 &nbsp;&nbsp;express = require('express'),<br />
 &nbsp;&nbsp;PHP = require('@edwinagudelo/php');<br />
 #########################################################<br />
 2. Instanciamos:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 const<br />
 &nbsp;&nbsp;app = express(),<br />
 &nbsp;&nbsp;php = new PHP();<br />
 #########################################################<br />
 3. Indicamos la carpeta de nuestras vistas:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 php.views = path.join(__dirname, 'views');<br />
 #########################################################<br />
 4. Definimos nuestras rutas:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 app.get('/', (req, res) => {<br />
 &nbsp;&nbsp;php.render('index', function (ans) {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;res.write(ans);<br />
@@ -139,7 +139,7 @@ function testRender(req, res){<br />
 };<br />
 #########################################################<br />
 5. Iniciamos el servidor:<br />
-### ------------------------------------------------- ###<br />
+\### ------------------------------------------------- ###<br />
 app.listen(9811, () =><br />
 &nbsp;&nbsp;console.log('\x1b[1;4;3;36mCreado por Edwin Agudelo -> 3dw1n.4gud3l0@gmail.com\x1b[0m\nServidor activo en el puerto', 9811)<br />
 );<br />
