@@ -17,7 +17,7 @@ allowing each one to develop with their preferred language.
 1. Call the dependencies:<br />
 ### ------------------------------------------------- ###<br />
 const<br />
-  path = require('path'),<br />
+&nbsp;&nbsp;path = require('path'),<br />
   express = require('express'),<br />
   PHP = require('php');<br />
 #########################################################<br />
@@ -83,7 +83,7 @@ Puede ser de utilidad para equipos de desarrollo en los cuales hay programadores
 1. SOLO funciona en distribuciones linux.<br />
 2. Debe tener instalado php de manera nativa en el sistema.<br />
 
-<pre>
+
 # Modo de uso:<br />
 #########################################################<br />
 1. Llamamos las dependencias:<br />
@@ -143,4 +143,3 @@ function testRender(req, res){<br />
 app.listen(9811, () =><br />
   console.log('\x1b[1;4;3;36mCreado por Edwin Agudelo -> 3dw1n.4gud3l0@gmail.com\x1b[0m\nServidor activo en el puerto', 9811)<br />
 );<br />
-</pre>
