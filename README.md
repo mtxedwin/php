@@ -1,7 +1,7 @@
 # php
 
 ## English Documentation <br/>Created by Edwin Agudelo<br />
-## my e-mail: 3dw1n.4gud3l0@gmail.com<br />
+## My e-mail: 3dw1n.4gud3l0@gmail.com<br />
 «php» is a module created in order to render files in PHP format, in order to be able to use a single service to serve both files Node.js, like php. I designed this module for the purpose of learning, it is not very professional and not recommended for use on large projects.
 
 It can be useful for development teams in which there are programmers
@@ -73,8 +73,8 @@ app.listen(9811, () =><br />
 );<br />
 #########################################################<br />
 #########################################################<br />
-## Documentacion en español <br/>Creado por Edwin Agudelo con amor :)<br />
-## mi correo: 3dw1n.4gud3l0@gmail.com<br />
+## Documentacion en español <br/>Creado por Edwin Agudelo<br />
+## Mi correo: 3dw1n.4gud3l0@gmail.com<br />
 «php» es un modulo creado con la finalidad de renderizar archivos en formato PHP, con la finalidad de poder utilizar un unico servicio para servir tanto archivos Node.js, como php. Este modulo lo diseñe con el proposito de aprender, no es muy profesional y no se recomienda utilizarlo en grandes proyectos.
 
 Puede ser de utilidad para equipos de desarrollo en los cuales hay programadores con experiencia en php trabajando con programadores con experiencia en Node.js, permitiendole a cada uno desarrollar con su lenguaje de preferencia.
